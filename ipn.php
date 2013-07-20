@@ -6,7 +6,7 @@
 	$merchantID = getValue("extra", "gateways", "name = 'زرین پال'");
 	$amount = $_SESSION["zarin_amount"];
 	$au = $_GET["Authority"];
-	$client = new SoapClient("https://www.zarinpal.com/pg/services/WebGate/wsdl", array("encoding"=>"UTF-8"));
+	$client = new SoapClient("https://de.zarinpal.com/pg/services/WebGate/wsdl", array("encoding"=>"UTF-8"));
 	$statusID =PaymentVerification(
 			array(
 					'MerchantID'	 => $merchantID ,
