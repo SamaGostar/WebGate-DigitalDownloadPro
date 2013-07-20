@@ -9,7 +9,7 @@
 	$merchantID = $row["extra"];
 	$desc = $row["extra2"];
 	$callback = SITEURL."/gateways/".$row["dir"]."/ipn.php";
-	$client = new SoapClient("https://www.zarinpal.com/pg/services/WebGate/wsdl", array("encoding"=>"UTF-8"));
+	$client = new SoapClient("https://de.zarinpal.com/pg/services/WebGate/wsdl", array("encoding"=>"UTF-8"));
 	$payID = $client->PaymentRequest(
 			array(
 							'MerchantID' 	=> $merchantID ,
