@@ -22,7 +22,7 @@
 							)
 			 );
 	if ($payID->Status != 100) {
-		die("در اتصال به درگاه زرین پال، مشکلی پیش آمده است");
+		die("$payID->Status-در اتصال به درگاه زرین پال، مشکلی پیش آمده است");
 	}
 	$_SESSION["zarin_amount"] = $amount;
 	$_SESSION["zarin_1"] = $user->uid."_".$user->sesid;
