@@ -53,6 +53,7 @@
 	header("Location: ".SITEURL."/account.php");
 	} else {
 		echo("<p style='direction:rtl;font:10pt Tahoma'>در هنگام پرداخت مشکلی به وجود آمد. با مدیر تماس بگیرید</p>");
+		echo'ERR: '.$statusID->Status;
 	}
 	$_SESSION["zarin_amount"] = "";
 	$_SESSION["zarin_1"] = "";
